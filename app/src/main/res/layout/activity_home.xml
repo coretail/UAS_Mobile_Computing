@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru_muda"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:padding="20dp"
+        android:text="Cakes Around the World"
+        android:textColor="@color/biru_tua"
+        android:textSize="14pt" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="335dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/search_bg"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search in the menu"
+        android:theme="@style/ThemeOverlay.Search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cake_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        tools:itemCount="1"
+        tools:listitem="@layout/menu_item" />
+
+</RelativeLayout>
